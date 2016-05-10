@@ -9,6 +9,7 @@ categories: english devatlant ukraine start business
 In hot summer 2015, somewhere in Ukrainian steps between Kiev and Dnipropetrovsk, 
 the idea to launch a software company was born. It took several months to actually start the company development from the ground. 
 
+<!-- more -->
 
 ![ukraine step](/images/ukraine_poltava.jpg "Ukraene Poltava step")
 
