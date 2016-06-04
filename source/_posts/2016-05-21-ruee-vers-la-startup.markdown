@@ -57,5 +57,8 @@ Pour moi cette notion de responsabilité est très importante car elle est toujo
 
 Comme vous voyez c’est difficile d’évaluer les rapports financiers que cette expérience de l’entrepreneur technologique vous apportera.
 A mon avis ce rapport est plus de la nature qualitative que quantitative. C’est un level-up. 
-Même, si vous allez perdre de l’argent c’est qui est tout à fait possible, vous allez devenir quelqu’un de diffèrent. Conceptuellement diffèrent. 
+Même, si vous allez perdre de l’argent, c’est qui est tout à fait possible, vous allez devenir quelqu’un de diffèrent. Conceptuellement diffèrent.
+
+Alors, mon message est n’hésitez pas à devenir des entrepreneurs. C’est un meilleur investissement que vous pouvez faire.
+
 
