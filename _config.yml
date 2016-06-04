@@ -3,9 +3,9 @@
 # ----------------------- #
 
 url: http://blog.devatlant.com
-title: Blog
+title: DevAtlant Blog
 subtitle: "Verba volant, scripta manent."
-author: devatlant
+author: Yevgen Voronetskyy
 simple_search: https://www.google.com/search
 description: devatlant technical blog -java, programming, macos, open source
 

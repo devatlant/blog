@@ -42,13 +42,16 @@ Vous allez travailler votre éloquence et apprendre de donner les présentations
 
 ><i class="fa fa-suitcase fa"></i>	Gestion administrative/financière de votre entreprise. 
 
-Vous allez faire connaissance avec le monde de la _comptabilité_ et de _l’administration_. Choisir le _statut juridique_. Décortiquer les nuances de _l’imposition_. Signer les contrats. Faire de bons de commandes. Etc. Toutes ces actions vont entrevoir pour vous la complexité de la gestion de l’entreprise. 
+Vous allez faire connaissance avec le monde de la _comptabilité_ et de _l’administration_. Choisir le _statut juridique_. 
+Décortiquer les nuances de _l’imposition_. Signer des contrats. Faire des bons de commandes. Etc. T
+outes ces actions vont entrevoir pour vous la complexité de la gestion de l’entreprise.
 
 ## <a name="responsabilite"></a>Responsabilité
 
 Vous dirigez vous-même votre entreprise. 
 Vous êtes un seul responsable de vos réussites et de vos échecs.
-Pour moi cette notion de responsabilité est très importante car elle est toujours accompagnée de la discipline, de la persévérance et de la maturité. Ce sont les qualités qui vont vous aider tout au long de votre vie.
+Pour moi cette notion de responsabilité est très importante car elle est toujours accompagnée de la discipline,
+ de la persévérance et de la maturité. Ce sont les qualités qui vont vous aider tout au long de votre vie.
 
 ##Conclusion
 
