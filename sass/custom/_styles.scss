@@ -145,8 +145,7 @@ $border-style: 2px solid $secondary-text-color;
 
 html {
   @extend .default-font;
-  border-top: 8px solid $accent-color;
-  font-size: 125%;
+  font-size: 100%;
   line-height: 1;
 }
 
@@ -155,7 +154,7 @@ body {
   background-color: #fff;
   color: $text-color;
   text-align: center;
-  width: 54%;
+  //width: 54%;
   margin: 0 auto;
 }
 
@@ -183,6 +182,8 @@ a {
 
 #main {
   clear: both;
+  padding-left: 17%;
+  padding-right: 17%;
 }
 
 aside,
@@ -315,7 +316,7 @@ pre {
 // ------------------------------
 
 nav {
-  border-top: $border-style;
+  //border-top: $border-style;
   padding: 12.361px 0;
   padding: 0.618rem 0;
 
@@ -538,6 +539,8 @@ article {
       margin-bottom: 0.173rem;
       line-height: 52.96px;
       line-height: 2.648rem; /* 1.916 + 0.732 */
+      font-family: Georgia;
+      font-weight: bold;
 
       a, a:hover {
         color: $text-color;
@@ -839,6 +842,7 @@ article {
         font-size: 1.916rem;
         line-height: 37.244px;
         line-height: 2.196rem; /* 1.916 + 0.28 */
+        font-family: Georgia;
       }
     }
 

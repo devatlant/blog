@@ -6,10 +6,10 @@ comments: true
 categories: startup technology entrepreneur french
 ---
 
-{% img flotte /images/startupAdvantages.png 240 180 startup avantages %}
+{% img flotte /images/startupAdvantages.png 140 100 startup avantages %}
 [La ruée vers l’or](https://fr.wikipedia.org/wiki/Ruée_vers_l%27or_en_Californie) dans les années _1800_. L’ère des innovations et des startups dans les années _2000_. Les deux époques font rêver. Depuis peu de temps, moi-même j’ai rejoint les rangs des entrepreneurs technologiques. 
 
-Dans ce post, je voudrais partager mes idées sur **la ruée vers la startup**.
+Dans ce post, je voudrais partager mes idées sur **la ruée vers la startup** qui fait bouillonner le monde technologique d'aujourd'hui.
 
 <!--more-->
 
