@@ -6,7 +6,7 @@ comments: true
 categories: english devatlant ukraine start business
 ---
 
-{% img flotte /images/FaitesUnePause.jpg 300 230 'Devatlant history start' %}
+{% img flotte /images/FaitesUnePause.jpg 100 100 'Devatlant history start' %}
 The first step is the most important thing in every activity. It can be a thought, or an action, or a blog post…  In DevAtlant company’s history the first think I remember, was a travel by car from Kiev to my native city Dniepropetrovsk.
 
 And I would like to start this blog by describing when and how the idea to built my own company appeared.

@@ -5,7 +5,9 @@
   {% endif %}
 </ul>
   {% if site.simple_search %}
+
 <form action="{{ site.simple_search }}" method="get">
+  <a href="http://devatlant.com" title="DevAtlant main site"><img src="/images/logo200.png" style="padding-bottom: 17px;"/></a>
   <fieldset role="search">
     <input type="hidden" name="sitesearch" value="{{ site.url | shorthand_url }}">
     <input class="search" type="text" name="q" results="0" placeholder="Search"/>
