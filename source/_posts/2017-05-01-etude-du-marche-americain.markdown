@@ -17,7 +17,7 @@ Avec l’autorisation de Corentin je publie ici ce travail.
 <!--more-->
 
 L'étude complète est disponible pour le téléchargement [ici]({{ site.url }}/assets/EtudeMarcheUSA_par_CorentinLePriol.pdf "Devatlant export to USA study").
-Pour tous ceux qui sont intéresses par la conclusion, j’ai copié le dernier paragraphe :
+Pour tous ceux qui sont intéresses par la conclusion, je mets ici juste le dernier paragraphe :
 
 >En vue de tous les éléments que nous avons abordés précédemment au cours de ce dossier,
 je recommanderai donc à l'entreprise de patienter avant de commencer une exportation de ses services vers les États-Unis.
