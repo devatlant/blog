@@ -34,7 +34,7 @@ categories: бизнес советы компания Франция русск
 Коротко, методично и ясно. Конечно, все на французском.
 Начните отсюда - [Этапы создания компании](https://www.afecreation.fr/pid216/etapes-de-la-creation.html?espace=1)
 
-{% img /images/Les_étapes_de_la_création_d_entreprise___AFE__Agence_France_Entrepreneur.png %}
+{% img /images/Les_etapes_de_la_creation_d_entreprise_AFE_Agence_France_Entrepreneur.png %}
 
 
 
