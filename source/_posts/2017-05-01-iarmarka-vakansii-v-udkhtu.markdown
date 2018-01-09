@@ -9,6 +9,8 @@ categories: Днепр студенты русский
 Сегодня по приглашению Оксаны Ляшенко выступил перед студентами IT-специальностей своего родного ХимТеха
 в рамках программы "Ярмарка вакансий в УДХТУ".
 
+<!-- more -->
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/9yHCnKHthV4?t=86" frameborder="0" allowfullscreen></iframe>
 
 Прямая ссылка на мой корткий спич - https://youtu.be/9yHCnKHthV4?t=86
