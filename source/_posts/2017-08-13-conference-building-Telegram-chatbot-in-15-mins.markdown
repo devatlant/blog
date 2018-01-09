@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Promouvoir la #FrenchTech en Ukraine"
+title: "Building Telegram chatbot in 15 minutes"
 date: 2017-08-13 15:25:00 +0300
 comments: true
 categories: technology french Telegram conference
@@ -19,7 +19,7 @@ Et après cela nous avons décrit les différentes opportunités offertes aux é
 <!-- more -->
 
 ## Introduction
-En Avril 2017 notre équipe a organisé sa première conférence « Building Telegram chatbot in 15 minutes » dont l’objectif
+En Avril 2017 notre équipe a organisé sa première conférence __« Building Telegram chatbot in 15 minutes »__ dont l’objectif
  était de créer un événement __medio-technologique__ pour motiver les étudiants ukrainiens. Cette motivation a 2 facettes :
  
 1.	Technologique – passionner les jeunes gens par la technologie
