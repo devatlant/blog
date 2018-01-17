@@ -8,10 +8,9 @@ categories: technology french Telegram conference
 
 {% img flotte /images/chatBotsTelegram.jpg Building chatbot for Telegram in 15 minutes by DevAtlant Software team %}
 
-L’idée était de capter l’attention des étudiants par la création d’une application __ludique et interactive__ que toute 
-la salle peut utiliser ensemble et faire évoluer via ses smartphones. Le processus de création – __l’élaboration du code applicative__ dans l’IDE 
-– a été montré du A à Z  avec le vidéoprojecteur. 
-
+L’idée était de capter l’attention des étudiants par la création d’une application __ludique et interactive__. 
+L'interaction avec les étudiants a été assurée grace aux smartphones qui sont aujourd'hui omniprésents. Le processus de création – __l’élaboration du code d'application__ dans l’IDE 
+– a été montré du A à Z  avec le vidéoprojecteur.
  
 Et après cela nous avons décrit les différentes opportunités offertes aux étudiants ukrainiens pour continuer leurs 
 études ou la vie professionnelle en France.
