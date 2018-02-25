@@ -32,7 +32,7 @@ Chrome respects the specification without applying any magic and does not recogn
 The solution is to respect the w3c specification and to use the literal string __"T"__ between date and time parts.
 Like this
 
-{% codeblock lang:html Crossbrowser format for date%}
+{% codeblock lang:html%}
         <input type="datetime-local" value="2018-02-25T19:24:23"/>
 {% endcodeblock %}
 
