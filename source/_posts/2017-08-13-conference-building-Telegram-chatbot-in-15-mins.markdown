@@ -6,7 +6,7 @@ comments: true
 categories: technology french Telegram conference
 ---
 
-{% img flotte /images/chatBotsTelegram.jpg Building chatbot for Telegram in 15 minutes by DevAtlant Software team %}
+{% img flotte /images/chatBotsTelegram.jpg 100 100 Building chatbot for Telegram in 15 minutes by DevAtlant Software team %}
 
 L’idée était de capter l’attention des étudiants par la création d’une application __ludique et interactive__. 
 L'interaction avec les étudiants a été assurée grace aux smartphones qui sont aujourd'hui omniprésents. Le processus de création – __l’élaboration du code d'application__ dans l’IDE 
