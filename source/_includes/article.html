@@ -1,7 +1,7 @@
 {% unless page.no_header %}
   <header>
     {% if index %}
-      <h1 class="entry-title"><a href="{{ root_url }}{{ post.url }}"><i class="fa fa-book fa" style="padding-right: 25px"></i>{% if site.titlecase %}{{ post.title | titlecase }}{% else %}{{ post.title }}{% endif %}</a></h1>
+      <h1 class="entry-title"><a href="{{ root_url }}{{ post.url }}"> &#128217; {% if site.titlecase %}{{ post.title | titlecase }}{% else %}{{ post.title }}{% endif %}</a></h1>
     {% else %}
       <h1 class="entry-title"><i class="fa fa-book fa" style="padding-right: 25px"></i>{% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %}</h1>
     {% endif %}
