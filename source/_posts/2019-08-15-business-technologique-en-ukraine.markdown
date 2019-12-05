@@ -15,7 +15,7 @@ Les 3 principaux arguments pour démarrer nos activités en **&#127482;&#127462;
 ## &#128214; Sommaire
 
 * [Qui sommes nous?](#devatlant)
-* [Avantages concurentiels](#avantages)
+* [Avantages concurrentiels](#avantages)
 * [TJM à 250 €](#tjm)
 * [Écosystème IT en Ukraine](#ecosysteme)
 * [Liens utiles pour démarrer vos activités en Ukraine](#liens)
@@ -42,7 +42,7 @@ L'application est en **production depuis 2 ans** et elle est devenue une vraie *
 Nos avantages concurrentiels sont l'excellence technique et la maitrise de la langue française. 
 Nos ingénieurs sont capables d'expliquer l'apparition d'un bug dans un code multithread en utilisant des formules de politesse en français &#128515;.
 
-## <a name="avantages"></a>&#9989; Avantages concurentiels
+## <a name="avantages"></a>&#9989; Avantages concurrentiels
 L'Ukraine nous a attiré tout d'abord par les **privilèges inédites d'État** pour les entreprises IT :     
 &#9989; Toutes les produits et services IT destinés à l'exportation sont **exonérés de la TVA**.  
 &#9989; Les ingénieurs en Ukraine sont embauchés en tant que **autoentrepreneurs**. Cela signifie l'absence de charges patronales pour l'employer, d'où **l'économie à 50%** sur les fonds salariaux.    
