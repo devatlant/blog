@@ -15,7 +15,7 @@ Ce projet avait pour l'objectif de permettre **la création automatique des comm
 **API** c'est un sigle en anglais **Application Programming Interface**. 
 On peut imaginer une API comme un contrat type entre un fournisseur de services et plusieurs clients. 
 Cela ouvre la multitude de possibilités pour un système eCommerce du fournisseur.
-> ℹ️️ Par exemple, le constructeur de cuisines pourrais utiliser son outil 3D existant et envoyer les commandes directement 
+> 📙️️ Par exemple, le constructeur de cuisines pourrais utiliser son outil 3D existant et envoyer les commandes directement 
 dans le back-office du SI de Leroy Merlin. 
 Ainsi le business peut engager les nouvelles collaborations tout en assurant le contrôle sur les commandes et les paiements.
 
@@ -30,7 +30,7 @@ Maintenant on expliquera plus en détail chaque brique logiciel présenté ci-de
 * [Spring](#Spring)
 * [Securité](#Security)
 * [Swagger](#Swagger)
-* [Error](#error)
+* [Géstion des errors](#error)
 * [jUnit](#jUnit)
 * [I18n](#i18n)
 * [Packaging](#packaging)
@@ -40,13 +40,39 @@ En terme d'architecture nous avons opté pour une approche **hybride** - Microse
 Techniquement c'est un jar à part entier avec toute la logique centré API (configuration, sécurité, controllers REST), 
 mais qui se trouve à l'intérieur du monolithe. 
 
-Pourquoi une telle approche ? En fait, le déploiement indépendant est un processus assez délicat dans l'échelle 
+Pourquoi une telle approche? En fait, le déploiement indépendant est un processus assez délicat dans l'échelle 
 d'une grande entreprise (hébergement, sécu, réseaux, etc.) 
 Mais cette approche hybride permettra dans le futur proche d'extraire ce composant sous la forme du **fat Jar** 
 ou **conteneur Docker** et le déployer  comme une vraie micro-services. 
 
-> ℹ️️ Oui, en pratique l'élégance et la beauté d'une technologie avancée peut être très limitée par les circonstances rigides autour de vous. 
-> Mais comme des professionnels et malgré les circonstances on doit accepter des inconvenients  
+> 📙️️ Oui, en pratique l'élégance et la beauté d'une technologie avancée peut être très limitée par les circonstances rigides autour de vous. 
+> Mais comme des professionnels et malgré circonstances techniques on doit trouver des compromis ⚖️ pour faire avancer le business.
+
+Dans le reste, l'architecture est classique - le pure REST en JSON.
+
+## <a name="Spring"></a> Spring
+
+Le framework **Spring** est devenu un standard de facto dans le développement logiciel d'**entreprise** en **Java**. 
+A notre avis ce framework, créé dans les années 2000 par 🧑‍🔬 [Rod Jonson](https://twitter.com/springrod?lang=fr), a gagné la bataille contre la norme J2EE.
+
+Nous sommes très Spring à DevAtlant et ce framework était un composant technique central dans l'architecture du projet. 
+Le sous-projet **Spring.Test** s'est avéré très pratique surtout lors du développement des tests **end-to-end** et de **rétrocompatibilité** de différentes versions de l'API.
+
+
+## <a name="Security"></a> Securité
+
+La sécurité d'utilisation de l'API était l'une de besoins **non-fonctionnelles** majeures dans le **Cahier de Charges** du projet.
+> 📙️ La **performance ⏰** et l'**audit 🔎**  étaient 2 autres besoins non-fonctionnelles clairement exprimés par le client. 
+>Cela constituera une article entière dans notre série consacrée à ce sujet.
+
+La pièce centrale du module de sécurité est un **Header HTTP dédié** qui sert à authentifier et autoriser l'accès. 
+Ce header contient la **clé sécrète unique**. Chaque partenaire reçoit sa propre clé pour chaque type d'environnement (dev, UAT, prod).
+
+## <a name="Swagger"></a> Swagger
+## <a name="Error"></a> Géstion des errors
+## <a name="jUnit"></a> jUnit
+## <a name="I18n"></a> i18n
+## <a name="Packaging"></a> packaging
 
 
 
