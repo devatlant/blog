@@ -6,9 +6,6 @@ comments: true
 categories: java html5 english datetime-local input issue Chrome
 ---
 
- 
-## Problem description
-
 You are facing the problem displaying the date in HTML5  input __datetime-local__ in Chrome. In FireFox the same web page, with the same HTML code, looks pretty good
  
 <!-- more -->
