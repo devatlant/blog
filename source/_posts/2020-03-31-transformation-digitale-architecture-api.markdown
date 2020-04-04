@@ -3,7 +3,7 @@ layout: post
 title: Transformation digitale. Partie 1 - API
 date: 2020-03-31 12:01:38 +0300
 comments: 
-categories: french Transformation API software java
+categories: french Transformation API software java spring logiciel
 ---
 
 {% img flotte /images/API_Toolbox_for_java_developer_FR_logo.png 100 100 %}
@@ -30,7 +30,7 @@ Maintenant on expliquera plus en détail chaque brique logiciel présenté ci-de
 * [Spring](#Spring)
 * [Securité](#Security)
 * [Swagger](#Swagger)
-* [Géstion des errors](#error)
+* [Géstion des errors avec Vnd.Errors](#error)
 * [jUnit](#jUnit)
 * [I18n](#i18n)
 * [Packaging](#packaging)
@@ -52,7 +52,7 @@ Dans le reste, l'architecture est classique - le pure REST en JSON.
 
 ## <a name="Spring"></a> Spring
 
-Le framework **Spring** est devenu un standard de facto dans le développement logiciel d'**entreprise** en **Java**. 
+Le framework [Spring](https://spring.io) est devenu un standard de facto dans le développement logiciel d'**entreprise** en **Java**. 
 A notre avis ce framework, créé dans les années 2000 par 🧑‍🔬 [Rod Jonson](https://twitter.com/springrod?lang=fr), a gagné la bataille contre la norme J2EE.
 
 Nous sommes très Spring à DevAtlant et ce framework était un composant technique central dans l'architecture du projet. 
@@ -61,15 +61,46 @@ Le sous-projet **Spring.Test** s'est avéré très pratique surtout lors du dév
 
 ## <a name="Security"></a> Securité
 
-La sécurité d'utilisation de l'API était l'une de besoins **non-fonctionnelles** majeures dans le **Cahier de Charges** du projet.
+La sécurité d'utilisation de l'API était l'une des besoins **non-fonctionnelles** majeures dans le **Cahier de Charges** du projet.
 > 📙️ La **performance ⏰** et l'**audit 🔎**  étaient 2 autres besoins non-fonctionnelles clairement exprimés par le client. 
 >Cela constituera une article entière dans notre série consacrée à ce sujet.
 
 La pièce centrale du module de sécurité est un **Header HTTP dédié** qui sert à authentifier et autoriser l'accès. 
-Ce header contient la **clé sécrète unique**. Chaque partenaire reçoit sa propre clé pour chaque type d'environnement (dev, UAT, prod).
+Ce header contient la **clé sécrète unique** 🔑. Chaque partenaire reçoit sa propre clé pour chaque type d'**environnement** (dev, recette, production).
+
+```
+SECRET_API_KEY=A9890-C65B899-AA00011
+```
+
+Le problématique majeur c'est la provenance de cette clé sécrète. Qui doit le générer et attribuer à chaque partenaire ? 
+Pour les solutions automatisées nous recommandons l'utilisation de la technologie 
+[oAuth 2.0 boosté par Spring](https://docs.spring.io/spring-security-oauth2-boot/docs/current/reference/html/boot-features-security-oauth2-authorization-server.html). 
+Pour le nombre limité des clients de vos API, vous pouvez générer et stocker la clé à la demande dans la configuration de serveur.   
 
 ## <a name="Swagger"></a> Swagger
-## <a name="Error"></a> Géstion des errors
+
+Sur tous nos projets on applique les principes d'**industrialisation 🏗 du génie logiciel**. L'un de ces principes est l'**automatisation**. 
+>Pour le code source on utilise ```Maven, GitLab, Jenkins, Sonar Qube, Nexus```. Rien de nouveau ici.
+
+Mais la question de la **qualité de la documentation** se pose très souvent dans tous les projets plus ou moins complexes. 
+Et cette question devient cruciale quand on parle de l'API, où la qualité de la documentation doit être toujours **impeccable**, 
+car la doc est utilisée par plusieurs équipes **externes**❗️ De l'autre coté, soyons franc, les développeurs n'aiment pas écrire 🤮 еt 
+surtout maintenir à jour la documentation du projet 🆘. Nous avons trouvé une solution à ce paradoxe - le projet [Swagger](https://swagger.io) ✅
+
+Swagger permet d'incorporer les ```annotations``` spécialisées autour de vos méthodes du ```@RestController```. 
+Et ces annotations sont utilisés lors de la génération de la documentation. 
+Un immense avantage du Swagger  c'est la documentation que les partenaires peuvent exécuter lors de la phase d'exploration de votre API. 
+Et nous avons remarqué que nos développeurs sont très à l'aise avec cette approche qui ne ressemble pas du tout à l'élaboration du document Word fade et sans etat d'âme. 
+Comme résultat on a une documentation:
+
+1. générée automatiquement lors du build Jenkins à partir du code source✅
+2. précise et à jour ✅
+3. se déploie automatiquement sur le serveur d'intégration ✅
+4. les équipes de dévs des partenaires peuvent faire leurs tests en autonomie ✅
+
+## <a name="Error"></a> Géstion des erreurs avec Vnd.Errors
+
+
 ## <a name="jUnit"></a> jUnit
 ## <a name="I18n"></a> i18n
 ## <a name="Packaging"></a> packaging
