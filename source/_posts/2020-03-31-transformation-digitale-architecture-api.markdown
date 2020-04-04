@@ -98,8 +98,28 @@ Comme résultat on a une documentation:
 3. se déploie automatiquement sur le serveur d'intégration ✅
 4. les équipes de dévs des partenaires peuvent faire leurs tests en autonomie ✅
 
-## <a name="Error"></a> Géstion des erreurs avec Vnd.Errors
+## <a name="error"></a> Géstion des erreurs avec Vnd.Errors
 
+Nous pensons que c'est inutile d'expliquer l'importance de communication des erreurs aux client de votre API. 
+Bien sûr, vous pouvez inventer votre _propre structure ou modèle des codes et messages de retour_, 
+mais si vous utilisez Spring, nous vous recommandons de jeter un œil sur le projet [VND.errors](https://github.com/blongden/vnd.error) (qui fait partie du project [Spring Hateoas](https://docs.spring.io/spring-hateoas/docs/current/reference/html/)).
+
+{% img /images/consoleVnd.png %}
+
+Maven config
+```xml
+        <!-- VndError for REST API error handling -->
+        <dependency> 
+            <groupId>org.springframework.hateoas</groupId>
+            <artifactId>spring-hateoas</artifactId>
+            <version>0.25.1.RELEASE</version>
+        </dependency>
+```
+
+Voici quelques règles de base qu'on suit lors de cette phase:
+Séparer les erreurs techniques et les erreurs métiers en introduisant    
+
+https://docs.spring.io/spring-hateoas/docs/0.25.3.BUILD-SNAPSHOT/api/org/springframework/hateoas/VndErrors.VndError.html
 
 ## <a name="jUnit"></a> jUnit
 ## <a name="I18n"></a> i18n
