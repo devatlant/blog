@@ -1,9 +1,11 @@
 ---
 layout: post
-title: "Migration de Front-end"
+title: "Migration du Front-end"
 date: 2020-04-04 14:28:51 +0200
 comments: true
-categories: 
+categories: french Transformation software JS Vue.JS migration logiciel
+published: false
+author: Denis Bezuhlyi
 ---
 
 {% img flotte /images/Migration_vue_js_logo.png 100 100 %}
@@ -13,6 +15,8 @@ pure et JQuery. **VueJS** c’est un framework _Javascript_ qui est devenu très
  même temps très puissant, ayant un support très fort de côte de communauté, cela
  peut être prouvé par le nombre des étoiles sur Github (plus de 161 milles au moment
  de l'écriture de l’article, si on compare avec React JS, il n’a que 146 milles).
+
+<!-- more -->
 
 ## <a name="Choix de la technologie"></a> Choix de la technologie
 Au début de l'année 2019 on comprenait bien que l’architecture des fichiers JS 
