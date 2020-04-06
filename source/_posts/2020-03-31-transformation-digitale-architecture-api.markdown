@@ -14,7 +14,7 @@ Ce projet avait pour l'objectif de permettre **la création automatique des comm
 <!-- more -->
 **API** c'est un sigle en anglais **Application Programming Interface**. 
 On peut imaginer une API comme un contrat type entre un fournisseur de services et plusieurs clients. 
-Cela ouvre la multitude de possibilités pour un système eCommerce du fournisseur.
+Cela ouvre la multitude de possibilités pour le système eCommerce du fournisseur.
 > 📙️️ Par exemple, le constructeur de cuisines pourrais utiliser son outil 3D existant et envoyer les commandes directement 
 dans le back-office du SI de Leroy Merlin. 
 Ainsi le business peut engager les nouvelles collaborations tout en assurant le contrôle sur les commandes et les paiements.
@@ -31,7 +31,7 @@ Maintenant on expliquera plus en détail chaque brique logiciel présenté ci-de
 * [Securité](#Security)
 * [Swagger](#Swagger)
 * [Géstion des errors avec Vnd.Errors](#error)
-* [jUnit](#jUnit)
+* [Rétrocompatibilité](#jUnit)
 * [I18n](#i18n)
 * [Packaging](#packaging)
 
@@ -102,11 +102,10 @@ Comme résultat on a une documentation:
 
 Nous pensons que c'est inutile d'expliquer l'importance de communication des erreurs aux client de votre API. 
 Bien sûr, vous pouvez inventer votre _propre structure ou modèle des codes et messages de retour_, 
-mais si vous utilisez Spring, nous vous recommandons de jeter un œil sur le projet [VND.errors](https://github.com/blongden/vnd.error) (qui fait partie du project [Spring Hateoas](https://docs.spring.io/spring-hateoas/docs/current/reference/html/)).
+mais nous vous recommandons de jeter un œil sur le projet [VND.errors](https://github.com/blongden/vnd.error) (qui fait partie du project [Spring Hateoas](https://docs.spring.io/spring-hateoas/docs/current/reference/html/)).
 
-{% img /images/consoleVnd.png %}
-
-Maven config
+L'utilisation est très simple et puissante à la fois.
+Tout d'abord il faut importer le JAR de Hateoas. Avec maven il suffit de faire :
 ```xml
         <!-- VndError for REST API error handling -->
         <dependency> 
@@ -115,14 +114,46 @@ Maven config
             <version>0.25.1.RELEASE</version>
         </dependency>
 ```
+Puis, on peut déclarer l'intercepteur des nos exceptions API dans le controlleur Spring annoté par ``` @ControllerAdvice``` comme suit:
+```java
+        @ExceptionHandler(Exception.class)
+        ResponseEntity<VndErrors.VndError> processApiBusinessException(final Exception exception){
+          return buildVndErrorHeader(exception);
+        }
 
-Voici quelques règles de base qu'on suit lors de cette phase:
-Séparer les erreurs techniques et les erreurs métiers en introduisant    
+        ResponseEntity<VndErrors.VndError> buildVndErrorHeader(final Exception exception) {
+          HttpHeaders httpHeaders = new HttpHeaders();
+          httpHeaders.setContentType(MediaType.parseMediaType("application/vnd.error"));
+          return new ResponseEntity<>(new VndErrors.VndError("code_1", exception.getMessage()),
+                  httpHeaders, INTERNAL_SERVER_ERROR);
+       }
+```
+Et finalement, en cas d'erreur le client obtient une erreur suivante représentée dans le protocole HTTP : 
+{% img /images/consoleVnd.png %}
+Dans la capture d'écran ci-dessus le plus important c'est le **body de la réponse** en format JSON avec les 3 champs suivants :
 
-https://docs.spring.io/spring-hateoas/docs/0.25.3.BUILD-SNAPSHOT/api/org/springframework/hateoas/VndErrors.VndError.html
+1.	**logref** - l'identifiant unique de l'erreur qui sert à facilement tracer l'événement ou être référencé dans la documentation. 
+Ce champ est destiné plus à la communication type machine-to-machine 💻 ↔️ 💻.
+2.	**message** - la chaine de caractère qui donne plus de détails sur l'erreur survenue. Ce champ est plus destiné à être lu/vu par humain 💻 ↔ 👷🏻.  
+3.	**links** - le lien optionnel permettant au client de l'API de contourner la situation ou d'être redirigé sur une page avec plus de détails ⚙️ .
 
-## <a name="jUnit"></a> jUnit
-## <a name="I18n"></a> i18n
+Le format est très bien pensé - facile à utiliser et ouvert à être enrichie par vos propres règles  ✅. 
+
+## <a name="jUnit"></a> Rétrocompatibilité
+
+Nous sommes très fans de l'approche TDD.
+Les tests automatiques pour notre module API ont permis non seulement de garantir la **qualité du code**, 
+mais aussi ont devenu une **plateforme** de test de assurant la **rétrocompatibilité** de différentes versions. 
+
+Au début du projet nous avons écrit les tests unitaires et d'intégration avec [jUnit](https://junit.org/junit5/) 
+et [Spring.Tests](https://docs.spring.io/spring-framework/docs/current/spring-framework-reference/testing.html). C'était la version ```/V1/``` de l'API.
+Un peu plus tard le protocole de l'API a évolué jusqu'à la version  ```/v2/```. 
+Nous avons eu la besoin d'assurer le fonctionnement en parallèle 🔃 de ```/V1/``` et ```/V2/```. Nos tests d'intégration 
+existants ont permis en quelques jours de créer les jeux de tests pour la ```/V1/``` et ```/V2/```.
+
+## <a name="I18n"></a> Localisation 
+
+
 ## <a name="Packaging"></a> packaging
 
 
