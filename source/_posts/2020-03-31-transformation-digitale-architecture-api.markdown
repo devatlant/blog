@@ -153,6 +153,11 @@ existants ont permis en quelques jours de créer les jeux de tests pour la ```/V
 
 ## <a name="I18n"></a> Localisation 
 
+Comme Leroy Merlin en Ukraine opère en deux langues - l'ukrainien 🇺🇦 et le russe 🇷🇺 - on avait besoin de localiser tous les messages de l'API.
+
+Nous avons choisi d'implémenter la localisation en ce basant sur l'abstraction fournie par Spring [ResourceBundleMessageSource](https://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/context/support/ResourceBundleMessageSource.html)
+
+Pour le management des traductions plus poussé et en plusieurs langues nous utilisons [LocaleApp](https://www.localeapp.com)
 
 ## <a name="Packaging"></a> packaging
 
