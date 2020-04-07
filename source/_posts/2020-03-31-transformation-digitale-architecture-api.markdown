@@ -32,7 +32,7 @@ Maintenant on expliquera plus en détail chaque brique logiciel présenté ci-de
 * [Swagger](#Swagger)
 * [Géstion des errors avec Vnd.Errors](#error)
 * [Rétrocompatibilité](#jUnit)
-* [I18n](#i18n)
+* [Localisation](#I18n)
 * [Packaging](#packaging)
 
 ## <a name="Architecture"></a> Architecture
