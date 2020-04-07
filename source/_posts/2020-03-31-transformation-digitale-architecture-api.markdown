@@ -159,7 +159,11 @@ Nous avons choisi d'implémenter la localisation en ce basant sur l'abstraction 
 
 Pour le management des traductions plus poussé et en plusieurs langues nous utilisons [LocaleApp](https://www.localeapp.com)
 
-## <a name="Packaging"></a> packaging
+## <a name="packaging"></a> packaging
+La nature hybride de l'architecture (décrite plus [haut](#Architecture)) impose packaging hybride également. 
+Le core de l'API était mit dans le WAR et le [projet Swagger](#Swagger) était déployé via le fat Jar buildé par le plugin **maven du Spring.Boot**. 
+Donc nous avons paramétré notre **CI** serveur **Jenkins** en ajoutant un nouveau **step** - le déploiement du JAR avec la documentation Swagger. 
+
 
 
 
