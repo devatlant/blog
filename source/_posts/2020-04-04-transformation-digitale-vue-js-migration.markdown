@@ -1,20 +1,20 @@
 ---
 layout: post
-title: "Migration du Front-end"
+title: "Transformation digitale. Partie 2 - migration sur vue.js"
 date: 2020-04-04 14:28:51 +0200
 comments: true
 categories: french Transformation software JS Vue.JS migration logiciel
-published: false
+published: true
 author: Denis Bezuhlyi
 ---
 
 {% img flotte /images/Migration_vue_js_logo.png 100 100 %}
-Dans cet article on parlera de notre expérience de passage sur VueJS depuis JS 
-pure et JQuery. **VueJS** c’est un framework _Javascript_ qui est devenu très populaire
- parmi les développeurs, car il propose une architecture assez simple, mais en 
- même temps très puissant, ayant un support très fort de côte de communauté, cela
- peut être prouvé par le nombre des étoiles sur Github (plus de 161 milles au moment
- de l'écriture de l’article, si on compare avec React JS, il n’a que 146 milles).
+Dans cet article [Denys Bezuhlyi](https://www.linkedin.com/in/denys-bezuhlyi/) présentera notre expérience de passage sur VueJS depuis JS 
+pure et JQuery. **VueJS** c’est un framework _Javascript_ qui est devenu très à la mode,
+ car il propose une architecture assez simple, mais en 
+ même temps très puissant, ayant un support très fort de côte de communauté. 
+ Jétez un oeil  le nombre des étoiles sur Github (plus de *161K* au moment
+ de l'écriture de l’article, si on compare avec React JS, il n’a que *146K*).
 
 <!-- more -->
 
