@@ -143,7 +143,7 @@ Le format est très bien pensé - facile à utiliser et ouvert à être enrichie
 
 Nous sommes très fans de l'approche TDD.
 Les tests automatiques pour notre module API ont permis non seulement de garantir la **qualité du code**, 
-mais aussi ont devenu une **plateforme** de test de assurant la **rétrocompatibilité** de différentes versions. 
+mais aussi ont devenu une **plateforme** de test en assurant la **rétrocompatibilité** de différentes versions. 
 
 Au début du projet nous avons écrit les tests unitaires et d'intégration avec [jUnit](https://junit.org/junit5/) 
 et [Spring.Tests](https://docs.spring.io/spring-framework/docs/current/spring-framework-reference/testing.html). C'était la version ```/V1/``` de l'API.
