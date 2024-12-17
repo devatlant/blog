@@ -3,6 +3,7 @@ layout: post
 title: "Run your blog on Octopress framework on MacOS by using Docker "
 date: 2024-12-16 19:41:57 +0000
 comments: true
+author: Yevgen Voronetski
 categories: english octopress docker macos dependencies blog 
 ---
 
@@ -19,8 +20,11 @@ The solution is to use **Docker image**.
 I started to use Octopress in 2016. At that time everything worked like a charm. 
 In 2024 the Octopress is no longer supported as I see in https://github.com/octopress/octopress (last commit was 9 years ago).
 And after each major OS update (I run MacOS) I have troubles with octopress installation, mainly because of **ruby** and **system dependencies** updates.
-
-❗Everything was tested on **MacOS Sequoia** (1.1.1 )
+{% pullquote %}
+Surround your paragraph with the pull quote tags. Then when you come to
+the text you want to pull, {" surround it like this "} and that's all there is to it.
+{% endpullquote %}
+❗Everything was tested on **MacOS Sequoia** (15.1.1 )
 
 # Problem
 Obviously, we need to use a Docker. 
