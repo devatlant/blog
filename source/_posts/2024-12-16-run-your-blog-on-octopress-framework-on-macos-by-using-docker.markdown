@@ -20,10 +20,7 @@ The solution is to use **Docker image**.
 I started to use Octopress in 2016. At that time everything worked like a charm. 
 In 2024 the Octopress is no longer supported as I see in https://github.com/octopress/octopress (last commit was 9 years ago).
 And after each major OS update (I run MacOS) I have troubles with octopress installation, mainly because of **ruby** and **system dependencies** updates.
-{% pullquote %}
-Surround your paragraph with the pull quote tags. Then when you come to
-the text you want to pull, {" surround it like this "} and that's all there is to it.
-{% endpullquote %}
+
 ❗Everything was tested on **MacOS Sequoia** (15.1.1 )
 
 # Problem
